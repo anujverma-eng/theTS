@@ -12,4 +12,6 @@ function newUser({name: string, isPaid: boolean}): void{
 const a = {name:"Anuj", isPaid:true, email:'anuj@gamil.com'}
 newUser(a)
 
+// newUser({name:"Anuj", isPaid:true, email:'anuj@gamil.com'})
+
 export {}
