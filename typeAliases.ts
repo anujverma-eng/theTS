@@ -4,7 +4,7 @@ type MyString = String
 type User = {
   name: MyString;
   email: MyString;
-  isPaid: boolean;
+  isPaid : boolean;
 }
 
 

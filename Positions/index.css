@@ -1,0 +1,49 @@
+.btn {
+  display: none;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background-color: lightblue;
+  display: none;
+}
+
+#btn1:checked ~ .container {
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+#btn2:checked ~ .container {
+  top: 50px;
+  left: 50px;
+  display: block;
+}
+
+#btn3:checked ~ .container {
+  top: 100px;
+  left: 100px;
+  display: block;
+}
+
+#btn4:checked ~ .container {
+  top: 150px;
+  left: 150px;
+  display: block;
+}
+
+#btn5:checked ~ .container {
+  top: 200px;
+  left: 200px;
+  display: block;
+}

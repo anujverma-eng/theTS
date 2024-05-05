@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+  <div>
+    <button class="btn">Click 1</button>
+
+  </div>
+
+  <div><button class="btn">Click 2</button></div>
+  <div><button class="btn">Click 3</button></div>
+  <div><button class="btn">Click 4</button></div>
+  <div><button class="btn">Click 5</button></div>
+
+  <div id="container">
+    Lorem ipsum dolor sit anuj.
+  </div>
+
+</body>
+
+<script>
+
+  document.addEventListener("DOMContentLoaded", () => {
+
+    const buttons = document.querySelectorAll(".btn")
+    const container = document.getElementById("container")
+
+
+    // const a = document.createElement("button").addEventListener("click")
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        const parent = button.parentNode
+        container.style.display = "block"
+        parent.appendChild(container)
+      })
+
+    })
+
+    document.addEventListener('click', (e) => {
+      if (!e.target.classList.contains("btn")) {
+        if (container != e.target) {
+          container.style.display = "none"
+        }
+      }
+    })
+  })
+
+</script>
+
+</html>
